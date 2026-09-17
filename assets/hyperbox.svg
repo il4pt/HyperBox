@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3c72" />
+      <stop offset="100%" stop-color="#2a5298" />
+    </linearGradient>
+    <linearGradient id="cubeTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#00f2fe" />
+    </linearGradient>
+    <linearGradient id="cubeLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0072ff" />
+      <stop offset="100%" stop-color="#00c6ff" />
+    </linearGradient>
+    <linearGradient id="cubeRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0852b5" />
+      <stop offset="100%" stop-color="#1976d2" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Card -->
+  <rect x="16" y="16" width="224" height="224" rx="48" fill="url(#bgGrad)" filter="url(#shadow)"/>
+
+  <!-- Inner Circuit / Virtualization grid accents -->
+  <circle cx="128" cy="128" r="92" fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.15" stroke-dasharray="8 6"/>
+  <circle cx="128" cy="128" r="64" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.2"/>
+
+  <!-- 3D Virtualization Box / Hypercube -->
+  <!-- Top Face -->
+  <polygon points="128,52 188,86 128,120 68,86" fill="url(#cubeTop)"/>
+  
+  <!-- Left Face -->
+  <polygon points="68,86 128,120 128,188 68,154" fill="url(#cubeLeft)"/>
+  
+  <!-- Right Face -->
+  <polygon points="128,120 188,86 188,154 128,188" fill="url(#cubeRight)"/>
+
+  <!-- Inner Core / VM Symbol -->
+  <polygon points="128,78 160,96 128,114 96,96" fill="#ffffff" fill-opacity="0.85"/>
+  <polygon points="96,96 128,114 128,150 96,132" fill="#ffffff" fill-opacity="0.4"/>
+  <polygon points="128,114 160,96 160,132 128,150" fill="#ffffff" fill-opacity="0.6"/>
+
+  <!-- Virtual Layer floating nodes -->
+  <circle cx="68" cy="86" r="5" fill="#00f2fe" filter="url(#shadow)"/>
+  <circle cx="188" cy="86" r="5" fill="#00f2fe" filter="url(#shadow)"/>
+  <circle cx="128" cy="188" r="5" fill="#00f2fe" filter="url(#shadow)"/>
+  <circle cx="128" cy="52" r="6" fill="#ffffff" filter="url(#shadow)"/>
+</svg>

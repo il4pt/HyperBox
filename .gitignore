@@ -1,0 +1,43 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Virtual Machine disk images & ISOs
+*.qcow2
+*.raw
+*.vdi
+*.vmdk
+*.iso
+*.img
+
+# Runtime logs & sockets
+*.log
+*.sock
+/tmp/
+
+# User data & VM storage
+vms/
+snapshots/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.directory
+
+# Antigravity artifacts (if inside workspace)
+.gemini/
